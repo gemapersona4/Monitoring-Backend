@@ -1,11 +1,12 @@
-////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////PENJELASAN WHICH PHP////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-1. Perintah which digunakan untuk mengidentifikasi lokasi File executable yang diberikan.
+//////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////PENJELASAN WHICH PHP\\\\\\\\\\\\\\\
+//////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
++++++++++++++++++++++++++++++++++++++++++++++++
+1. Perintah which digunakan untuk     	mengidentifikasi lokasi File executable yang diberikan.
++++++++++++++++++++++++++++++++++++++++++++++++
 2. Perintah kemudian mencari executable yang Anda berikan sebagai argumen dalam direktori yang tercantum dalam PATH environment variable.
++++++++++++++++++++++++++++++++++++++++++++++++
 3. Kesimpulannya, bila kita menngetikkan "which php" di terminal kita, selanjutnya terminal akan memproses perintah mencari file executable dari php.
++++++++++++++++++++++++++++++++++++++++++++++++
 4. Hasil dari "which php" adalah "/usr/bin/php" di direktori itulah file executable php saya berada
-
++++++++++++++++++++++++++++++++++++++++++++++++

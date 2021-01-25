@@ -2,7 +2,6 @@ SET semuaKomponen_tersambungListrik = true
 SET device_PC = ASUS X441UB
 SET OS = windows 10
 SET klikIkon = true
-SET 
 
 JIKA semuaKomponen_tersambungListrik == true
 Tampilkan pesan loading for windows
