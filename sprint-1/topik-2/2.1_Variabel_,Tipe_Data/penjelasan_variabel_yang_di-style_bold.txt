@@ -18,13 +18,13 @@ ______________________________________________
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  2. var_dump($e == $f);
-   "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan mengeluarkan tipe data boolean.
+   "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan mengeluarkan tipe data boolean. Kok bisa string dan integer disamakan??? karena operator perbandingan "==" tidak mengecek tipe data, itulah sebabnya perintah itu bisa menghasilkan output true.
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  3. var_dump($e === $f);
-    "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan mengeluarkan tipe data boolean dan juga ini membandingkan antara tipe data dari kedua operand.
+    "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan mengeluarkan tipe data boolean dan juga ini membandingkan antara tipe data dari kedua operand. Berbeda dengan nomor 2 di atas. Operator perbandingan "===" mengecek tipe data, itulah sebabnya perintah di atas menghasilkan nilai false.
     
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
