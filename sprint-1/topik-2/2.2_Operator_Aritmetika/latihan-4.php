@@ -15,5 +15,4 @@ echo "1. jika n=$n, nilai r: $r \n";
 echo "2. jika n=$n1, nilai r: $r1 \n";
 echo "3. jika n=$n2, nilai r: $r2\n";
 
-
 ?>
