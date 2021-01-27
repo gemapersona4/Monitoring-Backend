@@ -14,7 +14,7 @@ echo "1. Meannya adalah = " . $mean . "\n \n";
 
 // MEDIAN 
 sort($data);
-print_r($data);
+
 $middle = round(count($data) / 2);;
 $total = $data[$middle - 1];
 echo "2. Mediannya adalah = " . $total;
@@ -23,9 +23,9 @@ echo "\n \n";
 // MODE
 $mode = array_count_values($data);
 echo "3. Modus \n";
-foreach ($mode as $k => $v) {
+foreach ($mode as $v) {
     if ($v==max($mode)) {
-        echo "        Modus = $k ada sebanyak $v kali \n";
+        echo "        Modus = $v ada sebanyak  kali \n";
     }
 }
 echo "\n------------------------------------------------------------------------\n\n";
