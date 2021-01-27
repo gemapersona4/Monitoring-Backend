@@ -23,9 +23,9 @@ echo "\n \n";
 // MODE
 $mode = array_count_values($data);
 echo "3. Modus \n";
-foreach ($mode as $v) {
+foreach ($mode as $k => $v) {
     if ($v==max($mode)) {
-        echo "        Modus = $v ada sebanyak  kali \n";
+        echo "        Modus = $k ada sebanyak  $v kali \n";
     }
 }
 echo "\n------------------------------------------------------------------------\n\n";
