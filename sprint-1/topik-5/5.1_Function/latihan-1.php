@@ -48,29 +48,24 @@ echo "4. Menghitung Luas Trapesium\n   " . calcTrapezoidArea(5, 10, 15) . " cm^2
 
 // LATIHAN NOMOR 3
 
-echo "\n++++++++++++++++\nLATIHAN 3";
+echo "\n++++++++++++++++\nLATIHAN 3\n\n";
 
 $first = [2,3,4,5,6,7,8,9];
-$second = [6,9,12,15,18,21,24,27];
 
-function replaceArray($first, $second) {
-    echo "\n\n" . '$first = [';
-foreach ($first as $f) {
-    echo $f . ", ";
-}
-echo "]\n";
-
-$first = array_replace($first, $second);
-
-echo '$first = [';
-foreach ($first as $f) {
-    echo $f . ", ";
-}
-echo "]\n";
-return $first;
+function replaceArray($first) {
+    echo "before => [";
+    foreach ($first as $f) {
+        echo $f . ", ";
+    }
+    echo "]\n";
+    echo "after => [";
+    foreach ($first as $f) {
+        echo $f*3 . ", ";
+    }
+    echo "]\n";
 }
 
-replaceArray($first, $second);
+replaceArray($first);
 echo "\n\n";
 
 
