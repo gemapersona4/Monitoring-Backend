@@ -7,6 +7,7 @@ function calcRectangleArea($width,$length) {
     return $luas;
 }
 
+
 echo "\n++++++++++++++++\nLATIHAN 1";
 echo "\n\n1. Menghitung Luas Persegi Panjang\n   " . calcRectangleArea(5, 10) . " cm^2\n\n";
 
