@@ -104,7 +104,7 @@ echo "e) rerata usia santri = ";
         return (int)($sum / count($students));
     } 
         echo meanSantri($students);
-        echo "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+        echo "\n";
 
 // FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 echo "f) santri paling muda = ";
@@ -117,6 +117,29 @@ echo "f) santri paling muda = ";
         return $search[array_key_first($search)];
     }
     print_r(veryYoung($students));
+    echo "\n\n\n\n\n\n\n\n\n\n\n\n";
+
+$a = [
+    [
+        'name' => '1a',
+        'id' => '12b',
+        'div' => '123c',
+    ],
+    [
+        'name' => '2b',
+        'id' => '23c',
+        'div' => '234d',
+    ],
+    [
+        'name' => '3c',
+        'id' => '34d',
+        'div' => '345e',
+    ]
+];
+
+foreach ($a as $A => $B) {
+    echo $A => $B;
     echo "\n";
+}
 
 ?>
