@@ -23,6 +23,7 @@ echo "\n \n";
 // MODE
 $mode = array_count_values($data);
 echo "3. Modus \n";
+// $data = [5,9,6,7,9,8,10,7,8];
 foreach ($mode as $k => $v) {
     if ($v==max($mode)) {
         echo "        Modus = $k ada sebanyak  $v kali \n";

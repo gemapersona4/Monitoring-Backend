@@ -9,7 +9,13 @@ function calcRectangleArea($width,$length) {
 
 
 echo "\n++++++++++++++++\nLATIHAN 1";
-echo "\n\n1. Menghitung Luas Persegi Panjang\n   " . calcRectangleArea(5, 10) . " cm^2\n\n";
+echo "\n\n1. Menghitung Luas Persegi Panjang\n";
+echo "Masukkan nilai panjang = ";
+$length = trim(fgets(STDIN));
+echo "Masukkan nilai lebar = ";
+$width = trim(fgets(STDIN));
+echo "Luasnya adalah = ";
+echo calcRectangleArea($length, $width) . " cm^2\n\n";
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -24,7 +30,14 @@ function calcTriangleArea($base,$height) {
 }
 
 echo "++++++++++++++++\nLATIHAN 2\n";
-echo "2. Menghitung Luas Segitiga\n   " . calcTriangleArea(5, 10) . " cm^2\n";
+echo "\n2. Menghitung Luas Segitiga\n";
+echo "Masukkan nilai alas = ";
+$base = trim(fgets(STDIN));
+echo "Masukkan nilai tinggi = ";
+$height = trim(fgets(STDIN));
+echo "Luasnya adalah = ";
+echo calcTriangleArea($base, $height) . " cm^2\n\n";
+
 
 // MENCARI LUAS LINGKARAN
 function calcCircleArea($radius) {
@@ -32,7 +45,12 @@ function calcCircleArea($radius) {
     return $luas;
 }
 
-echo "3. Menghitung Luas Lingkaran\n   " . calcCircleArea(5) . " cm^2\n";
+echo "3. Menghitung Luas Lingkaran\n"; 
+echo "Masukkan nilai jari-jari (r) = ";
+$radius = trim(fgets(STDIN));
+echo "Luasnya adalah = ";
+echo calcCircleArea($radius) . " cm^2\n\n";
+
 
 // MENCARI LUAS TRAPESIUM
 function calcTrapezoidArea($up,$down,$height) {
@@ -40,7 +58,16 @@ function calcTrapezoidArea($up,$down,$height) {
     return $luas;
 }
 
-echo "4. Menghitung Luas Trapesium\n   " . calcTrapezoidArea(5, 10, 15) . " cm^2\n";
+echo "4. Menghitung Luas Trapesium\n";
+echo "\n2. Menghitung Luas Trapesium\n";
+echo "Masukkan nilai atas = ";
+$up = trim(fgets(STDIN));
+echo "Masukkan nilai bawah = ";
+$down = trim(fgets(STDIN));
+echo "Masukkan nilai tinggi = ";
+$height = trim(fgets(STDIN));
+echo "Luasnya adalah = ";
+echo calcTrapezoidArea($up, $down, $height) . " cm^2\n\n";
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

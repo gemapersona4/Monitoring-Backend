@@ -1,6 +1,9 @@
 <?php
 
-$suhuCelcius = 34;
+echo "\n\nPROGRAM KONVERSI SUHU OTOMATIS\n\n";
+
+echo "Masukkan nilai suhu dalam celcius = ";
+$suhuCelcius = trim(fgets(STDIN));
 $suhuFahrenheit = ($suhuCelcius * 9/5) + 32;
 $suhuKelvin = $suhuCelcius + 273.15;
 $suhuReamur = $suhuCelcius * 4/5;
