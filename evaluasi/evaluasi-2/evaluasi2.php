@@ -1,0 +1,78 @@
+<?php
+
+// بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم 
+// ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِينَ
+// أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللهِ
+// اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ ، وَعَلَى آلِ مُحَمَّدٍ ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ ، إِنَّكَ حَمِيدٌ مَجِيدٌ
+//  ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ ، وَعَلَى آلِ مُحَمَّدٍ ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ ، وَعَلَى آلِ إِبْرَاهِيمَ ، إِنَّكَ حَمِيدٌ مَجِيدٌ
+
+// WITH PROCEDURAL PHP
+    $students = [ 1 => ["name" => "Gema Masse Cipta"],
+                      ["name" => "Ahmad Arif Ilahana"],
+                      ["name" => "Bagus Sonarangga"],
+                      ["name" => "Shafwan Farizi"]
+               ];
+
+// print_r($students);
+
+// TITLE
+    echo "\n====================================Student====================================\n";
+
+// USE WHILE FOR LOOP 
+    while (true) {
+// MAIN_MENU
+    echo "\n__________________Main_Menu__________________\n\n";
+    echo "     1. New Student\n";
+    echo "     2. Edit Student\n";
+    echo "     3. Delete Student\n";
+    echo "     4. List Student\n";
+    echo "\nInput = ";
+    $inputMain = trim(fgets(STDIN));
+    
+// FIRST_CONDITIONALS
+    if ( $inputMain == 1 ) {
+         echo "\n__________________New_Student__________________\n\n";
+         echo "     Name = ";
+         $newName = trim(fgets(STDIN));
+            if ( empty($newName) == false ) {
+                $students[]["name"] = $newName;
+                print_r($students);
+                echo "==========Done, name has been saved==========\n";  
+            }
+    } elseif ( $inputMain == 2 ) {
+        echo "\n__________________Edit_Student__________________\n\n";
+        echo "     List of Students\n";
+        echo "     -------------------------\n";
+        $i = 1;
+        foreach ( $students as $student ) {
+            foreach ( $student as $name) {
+                echo "     " . $i++ . ". " . $name . "\n";
+            }
+        }
+
+        echo "     -------------------------\n";
+        echo "     Which want you to edit = ";
+        $editName = trim(fgets(STDIN));
+        
+         
+    } elseif ( $inputMain == 2 ) {
+        echo "\n__________________Delete_Student__________________\n\n";
+         
+    } elseif ( $inputMain == 2 ) {
+        echo "\n__________________List_Student__________________\n\n";
+         
+    } else {
+
+    } 
+    
+// ENDWHILE ( USE WHILE FOR LOOP )
+    echo "\n===============================================================================\n";
+    echo "\n===============================================================================\n";
+    echo "\n===============================================================================\n";
+    }
+// END 
+    echo "\n===============================================================================\n";
+    echo "\n===============================================================================\n";
+    echo "\n===============================================================================\n";
+
+?>

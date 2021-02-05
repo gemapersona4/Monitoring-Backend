@@ -25,7 +25,7 @@ $length = trim(fgets(STDIN));
 echo "input width = ";
 $width = trim(fgets(STDIN));
 echo "total area = ";
-echo $area->areaRectangle($length, $width);
+echo Rectangle::areaRectangle($length, $width);
 echo "\n";
 
 ?>

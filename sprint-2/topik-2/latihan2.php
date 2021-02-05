@@ -31,7 +31,7 @@ echo "===========================\n";
 echo "input radius = ";
 $radius = trim(fgets(STDIN));
 echo "total area circle = ";
-echo $area->areaCircle($radius);
+echo Area::areaCircle($radius);
 echo "\n";
 
 echo "\n||||PROGRAM TRAPEZOID AREA|||\n";
@@ -44,7 +44,7 @@ $down = trim(fgets(STDIN));
 echo "input height = ";
 $height = trim(fgets(STDIN));
 echo "total area trapezoid = ";
-echo $area->areaTrapezoid($up, $down, $height);
+echo Area::areaTrapezoid($up, $down, $height);
 echo "\n";
 
 ?>

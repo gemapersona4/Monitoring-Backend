@@ -40,7 +40,7 @@ function areaRec() {
         throw new Exception('eitsss kamu masukin angka minus, ya ngga bisa lah yaa!!!! '."\n");
     } else {
     echo "total area = ";
-    echo $area->areaRectangle($length, $width);
+    echo Area::areaRectangle($length, $width);
     echo "\n";    
     }
 } 
@@ -55,7 +55,7 @@ function areaCir() {
         throw new Exception('eitsss kamu masukin angka minus, ya ngga bisa lah yaa!!!! '."\n");
     } else {
     echo "total area = ";
-    echo $area->areaCircle($radius);
+    echo Area::areaCircle($radius);
     echo "\n";    
     }
 }
@@ -75,7 +75,7 @@ function areaTra() {
         throw new Exception('eitsss kamu masukin angka minus, ya ngga bisa lah yaa!!!! '."\n");
     } else {
     echo "total area = ";
-    echo $area->areaTrapezoid($up, $down, $height);
+    echo Area::areaTrapezoid($up, $down, $height);
     echo "\n";    
     }
 }
