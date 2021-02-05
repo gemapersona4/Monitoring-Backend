@@ -56,25 +56,25 @@
             if ( $editName == 1 ) {
                 echo "     Edit Name = ";
                 $editName1 = trim(fgets(STDIN));
-                $students[1]["name"] = $editName1;
+                $students[1][1] = $editName1;
                 print_r($students);
                 echo "==========Done, name has been edited==========\n";  
             } elseif ( $editName == 2 ) {
                 echo "     Edit Name = ";
                 $editName1 = trim(fgets(STDIN));
-                $students[2]["name"] = $editName1;
+                $students[2][2] = $editName1;
                 print_r($students);
                 echo "==========Done, name has been edited==========\n";  
             } elseif ( $editName == 3 ) {
                 echo "     Edit Name = ";
                 $editName1 = trim(fgets(STDIN));
-                $students[3]["name"] = $editName1;
+                $students[3][3] = $editName1;
                 print_r($students);
                 echo "==========Done, name has been edited==========\n";  
             } elseif ( $editName == 4 ) {
                 echo "     Edit Name = ";
                 $editName1 = trim(fgets(STDIN));
-                $students[4]["name"] = $editName1;
+                $students[4][4] = $editName1;
                 print_r($students);
                 echo "==========Done, name has been edited==========\n";  
             }  
@@ -91,7 +91,7 @@
             if ( $deleteName == 1 ) {
                 unset($students[1][1]);
                 print_r($students);
-                echo "==========Done, n4ame has been deleted==========\n";  
+                echo "==========Done, name has been deleted==========\n";  
             } elseif ( $deleteName == 2 ) {
                 unset($students[2][2]);
                 print_r($students);
