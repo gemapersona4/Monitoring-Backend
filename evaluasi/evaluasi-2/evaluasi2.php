@@ -7,10 +7,10 @@
 //  ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ ، وَعَلَى آلِ مُحَمَّدٍ ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ ، وَعَلَى آلِ إِبْرَاهِيمَ ، إِنَّكَ حَمِيدٌ مَجِيدٌ
 
 // WITH PROCEDURAL PHP
-    $students = [ 1 => ["name" => "Gema Masse Cipta"],
-                      ["name" => "Ahmad Arif Ilahana"],
-                      ["name" => "Bagus Sonarangga"],
-                      ["name" => "Shafwan Farizi"]
+    $students = [ 1 => [1 => "Gema Masse Cipta"],
+                      [2 =>"Ahmad Arif Ilahana"],
+                      [3 => "Bagus Sonarangga"],
+                      [4=> "Shafwan Farizi"]
                ];
 
 // print_r($students);
@@ -35,7 +35,7 @@
          echo "     Name = ";
          $newName = trim(fgets(STDIN));
             if ( empty($newName) == false ) {
-                $students[]["name"] = $newName;
+                $students[]["5"] = $newName;
                 print_r($students);
                 echo "==========Done, name has been saved==========\n";  
             }
@@ -44,23 +44,75 @@
         echo "     List of Students\n";
         echo "     -------------------------\n";
         $i = 1;
-        foreach ( $students as $student ) {
-            foreach ( $student as $name) {
-                echo "     " . $i++ . ". " . $name . "\n";
+            foreach ( $students as $student ) {
+                foreach ( $student as $name) {
+                    echo "     " . $i++ . ". " . $name . "\n";
             }
         }
-
         echo "     -------------------------\n";
         echo "     Which want you to edit = ";
         $editName = trim(fgets(STDIN));
-        
-         
-    } elseif ( $inputMain == 2 ) {
+        echo "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+            if ( $editName == 1 ) {
+                echo "     Edit Name = ";
+                $editName1 = trim(fgets(STDIN));
+                $students[1]["name"] = $editName1;
+                print_r($students);
+                echo "==========Done, name has been edited==========\n";  
+            } elseif ( $editName == 2 ) {
+                echo "     Edit Name = ";
+                $editName1 = trim(fgets(STDIN));
+                $students[2]["name"] = $editName1;
+                print_r($students);
+                echo "==========Done, name has been edited==========\n";  
+            } elseif ( $editName == 3 ) {
+                echo "     Edit Name = ";
+                $editName1 = trim(fgets(STDIN));
+                $students[3]["name"] = $editName1;
+                print_r($students);
+                echo "==========Done, name has been edited==========\n";  
+            } elseif ( $editName == 4 ) {
+                echo "     Edit Name = ";
+                $editName1 = trim(fgets(STDIN));
+                $students[4]["name"] = $editName1;
+                print_r($students);
+                echo "==========Done, name has been edited==========\n";  
+            }  
+    } elseif ( $inputMain == 3 ) {
         echo "\n__________________Delete_Student__________________\n\n";
-         
-    } elseif ( $inputMain == 2 ) {
+        // $i2 = 1;
+            foreach ( $students as $student ) {
+                foreach ( $student as $id => $name ) {
+                    echo "     " . $id . ". " . $name . "\n";
+                }
+            }
+        echo "\n which want to delete ? ";
+        $deleteName = trim(fgets(STDIN));
+            if ( $deleteName == 1 ) {
+                unset($students[1][1]);
+                print_r($students);
+                echo "==========Done, n4ame has been deleted==========\n";  
+            } elseif ( $deleteName == 2 ) {
+                unset($students[2][2]);
+                print_r($students);
+                echo "==========Done, name has been deleted==========\n";  
+            } elseif ( $deleteName == 3 ) {
+                unset($students[3][3]);
+                print_r($students);
+                echo "==========Done, name has been deleted==========\n";  
+            } elseif ( $deleteName == 4 ) {
+                unset($students[4][4]);
+                print_r($students);
+                echo "==========Done, name has been deleted==========\n";  
+            }
+    } elseif ( $inputMain == 4 ) {
         echo "\n__________________List_Student__________________\n\n";
-         
+        $i2 = 1;
+        foreach ( $students as $student ) {
+            foreach ( $student as $name) {
+                echo "     " . $i2++ . ". " . $name . "\n";
+            }
+        }
     } else {
 
     } 
