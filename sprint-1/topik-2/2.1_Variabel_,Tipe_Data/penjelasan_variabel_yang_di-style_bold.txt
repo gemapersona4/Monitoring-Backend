@@ -1,36 +1,44 @@
 ______________________________________________
 ++++++++++++++++++++++++++++++++++++++++++++++
 ----------------------------------------------
-
 *****Penjelasan_Output_yang_di-style_Bold*****
-______________________________________________
-++++++++++++++++++++++++++++++++++++++++++++++
 ----------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++
+______________________________________________
+
 
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////
 
  1. var_dump($d + $e);
-   Saat $e = '2', variabel $e dengan nilai 2 tanpa ada huruf atau karakter lainnya akan otomatis terbaca menjadi integer di operasi di atas. Apabila variabel $e memiliki nilai seperti '2 asefhu', pernyataan di atas akan menghasilkan pesan error. 
+   Saat $e = '2', variabel $e dengan nilai 2 tanpa ada huruf atau karakter lainnya akan otomatis terbaca menjadi 
+   integer di operasi di atas. Apabila variabel $e memiliki nilai seperti '2 asefhu', pernyataan di atas akan 
+   menghasilkan pesan error. 
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  2. var_dump($e == $f);
-   "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan mengeluarkan tipe data boolean. Kok bisa string dan integer disamakan??? karena operator perbandingan "==" tidak mengecek tipe data, itulah sebabnya perintah itu bisa menghasilkan output true.
+   "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan 
+   mengeluarkan tipe data boolean. Kok bisa string dan integer disamakan??? karena operator perbandingan "==" tidak 
+   mengecek tipe data, itulah sebabnya perintah itu bisa menghasilkan output true.
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  3. var_dump($e === $f);
-    "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan mengeluarkan tipe data boolean dan juga ini membandingkan antara tipe data dari kedua operand. Berbeda dengan nomor 2 di atas. Operator perbandingan "===" mengecek tipe data, itulah sebabnya perintah di atas menghasilkan nilai false.
+    "==" adalah operator pembanding yang membandingkan sisi kanan dan kiri sama atau tidak dan operator ini akan 
+    mengeluarkan tipe data boolean dan juga ini membandingkan antara tipe data dari kedua operand. Berbeda dengan 
+    nomor 2 di atas. Operator perbandingan "===" mengecek tipe data, itulah sebabnya perintah di atas menghasilkan 
+    nilai false.
     
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  4. var_dump($g);
-   Nilai dari variable $g itu adalah "null". null adalah tipe data spesial yang hanya memiliki satu nilai. Null adalah tipe data yang tidak ada penetepan nilainya.
+   Nilai dari variable $g itu adalah "null". null adalah tipe data spesial yang hanya memiliki satu nilai. Null 
+   adalah tipe data yang tidak ada penetepan nilainya.
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -48,25 +56,30 @@ ______________________________________________
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  7. var_dump(true && false);
-   Perintah ini akan menghasilkan nilai false. Operasi logika "&&" akan mengeluarkan nilai true hanya bila kedua operand bernilai "true". Hasil perintah di atas adalah false karena salah satu saja yang bernilai true.
+   Perintah ini akan menghasilkan nilai false. Operasi logika "&&" akan mengeluarkan nilai true hanya bila kedua 
+   operand bernilai "true". Hasil perintah di atas adalah false karena salah satu saja yang bernilai true.
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  8. var_dump(true || false);
-    Perintah ini akan menghasilkan nilai true. Operasi logika "||" akan mengeluarkan nilai true hanya bila salah satu saja operand bernilai "true".
+    Perintah ini akan menghasilkan nilai true. Operasi logika "||" akan mengeluarkan nilai true hanya bila salah 
+    satu saja operand bernilai "true".
     
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  9. var_dump(false || false);
-    Perintah ini akan menghasilkan nilai false. Operasi logika "||" akan mengeluarkan nilai false hanya bila kedua operand bernilai "false".
+    Perintah ini akan menghasilkan nilai false. Operasi logika "||" akan mengeluarkan nilai false hanya bila kedua 
+    operand bernilai "false".
     
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 10. var_dump(!false)  
-    Perintah ini akan menghasilkan nilai true. Operasi logika "!" akan mengeluarkan nilai kebalikan dari operand-nya misal seperti perintah di atas. Perintah di atas akan menghasilkan nilai "true" karena lawan dari false adalah true.
+    Perintah ini akan menghasilkan nilai true. Operasi logika "!" akan mengeluarkan nilai kebalikan dari operand-nya 
+    misal seperti perintah di atas. Perintah di atas akan menghasilkan nilai "true" karena lawan dari false adalah 
+    true.
 
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

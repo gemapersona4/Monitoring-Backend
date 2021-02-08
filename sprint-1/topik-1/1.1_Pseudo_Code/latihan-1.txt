@@ -1,50 +1,58 @@
-#pseudocode program mengoperasikan ms word
 
-SET semuaKomponen_tersambungListrik = false
-SET klikIkon = false
-SET desktop = false
-SET ketik = false
-SET klikIkon2 = false
-SET berhasil = false
+==================================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||OPEN MICROSOFT WORD IN WINDOWS 10||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================================================================================================
+
+SET semuaKomponen_tersambungListrik = true
 
 JIKA semuaKomponen_tersambungListrik == true
-Tampilkan pesan loading for windows 10
+    Tampilkan pesan loading for windows 10
+    SET desktop = true
 AKHIR-JIKA
 
 JIKA desktop == true
-Tampilkan pesan anda sudah di Desktop Windows 10 dan  harus klik ikon jendela windows 10 di sebelah kiri-bawah
+    Tampilkan pesan anda sudah di Desktop Windows 10 dan harus klik ikon jendela windows 10 di sebelah kiri-bawah
+    SET klikIkon = true
 LAINNYA
-Tampilkan pesan klik ikonnya dulu bambang!!!
+    Tampilkan pesan klik ikonnya dulu bambang!!!
 AKHIRI-JIKA
 
 JIKA klikIkon == true 
-Tampilkan pesan sekarang langkah selanjutnya klik kolom pencarian
+    Tampilkan pesan sekarang langkah selanjutnya klik kolom pencarian
+    SET ketik = true
 LAINNYA 
-Tampilkan pesan klik dulu tuh ikon jendela di sebelah kiri-bawah
+    Tampilkan pesan klik dulu tuh ikon jendela di sebelah kiri-bawah
 AKHIRI-JIKA
 
 JIKA ketik == true 
-Tampilkan pesan cari ms word dengan mengetikkan "ms word"
+    Tampilkan pesan cari ms word dengan mengetikkan "ms word"
+    SET klikIkon2 = true
 LAINNYA 
-Tampilkan pesan ketik ms word dulu ya om
+    Tampilkan pesan ketik ms word dulu ya om
 AKHIRI-JIKA
 
 JIKA klikIkon2 == true
-Tampilkan pesan tunggu sebentar ms word sedang dimuat
+    Tampilkan pesan tunggu sebentar ms word sedang dimuat
+    SET loading = true
 LAINNYA 
-Tampilkan pesan itu klik dulu ikon ms word
+    Tampilkan pesan itu klik dulu ikon ms word
 AKHIRI-JIKA
 
 JIKA loading == true
-Tampilkan pesan ms word sudah dibuka
+    Tampilkan pesan ms word sudah dibuka
+    SET berhasil = true
 LAINNYA 
-Tampilkan pesan ms word masih dimuat
+    Tampilkan pesan ms word masih dimuat
 AKHIRI-JIKA
 
 JIKA berhasil == true
-Tampilkan pesan anda sudah bisa mengolah kata-kata di bagian page
+    Tampilkan pesan anda sudah bisa mengolah kata-kata di bagian page
 LAINNYA 
-Tampilkan pesan ada yang salah dengan ms word anda
+    Tampilkan pesan ada yang salah dengan ms word anda
 AKHIRI-JIKA
 
 Tampilkan pesan anda dapat menggunakan fitur2 ms word di menu bar yang tersedia di atas page
