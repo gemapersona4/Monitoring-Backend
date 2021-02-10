@@ -1,0 +1,14 @@
+-----BISMILLAHIRRAHMANIRRAHIIM-----
+/////////////////////////////////////////////////////
+1. Relasi 1:1 	
+	Relasi one to one adalah hubungan setiap satu baris data pada tabel pertama hanya berhubungan dengan tepat satu baris data pada tabel kedua.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2. Relasi 1:n 
+	Relasi one to many adalah hubungan setiap satu baris data pada tabel pertama dapat berhubungan dengan satu baris atau lebih data pada tabel kedua.
+/////////////////////////////////////////////////////
+3. Relasi n;m
+	Relasi many to many adalah keadaan hubungan antara kedua tabel masing-masing dapat mengakses banyak data dari tiap tabel yang lain. Akan tetapi, kita memerlukan tabel ketiga untuk dijadikan sebagai 'foreign key' dari masing-masing tabel.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+	 
+	
