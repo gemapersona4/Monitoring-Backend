@@ -1,0 +1,30 @@
+
+body {
+    display: inline;
+    margin: 1000;
+    padding: 1000;
+    text-align: center;
+    background-color:springgreen;
+    color:rebeccapurple;
+}
+
+.primary {
+    margin: 50px 500px 50px 500px;
+    padding: 50px;
+    background-color:teal;
+    border-radius: 10%;
+}
+
+.pertama {
+    position: flexbox;
+    margin-left: 38%;
+}
+
+.kedua {
+    position: flexbox;
+    margin-left: 18%;
+}
+
+input {
+    color:rebeccapurple;
+}

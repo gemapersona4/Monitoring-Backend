@@ -8,10 +8,14 @@
 <html lang="en">
 <head>
     <title>tabel-post</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+
+<div class="primary">
+<hr>
 <h3>FORM POST</h3>
+<hr>
     <form action="" method="post">
         Barang: 
         <br> 
@@ -20,15 +24,14 @@
         Harga: 
         <br> 
         <input type="text" name="harga">
-        <br>
-        <input type="submit" value="Submit untuk POST!">    
+        <br><br>
+        <input type="submit" value="Submit untuk POST!">
     </form>
 
     <br> 
-    TABEL POST
-    <hr>
-
-    <table border="1" cellpadding="10" cellspacing="1">
+    <p>TABEL POST</p>
+    
+    <table border="1" cellpadding="10" cellspacing="1" class="pertama">
         <tr>
             <th>Barang</th>
             <th>Harga</th>
@@ -39,7 +42,9 @@
         </tr>
     </table>
 
+    <hr>
     <h3>FORM GET</h3>
+    <hr>
     <form action="" method="get">
         Kurir: 
         <br> 
@@ -61,11 +66,10 @@
         <input type="submit" value="Submit untuk GET!">    
     </form>
 
-    <br> 
-    TABEL GET
-    <hr>
+    <br>
+    <p>TABEL GET</p>
 
-    <table border="1" cellpadding="10" cellspacing="1">
+    <table border="1" cellpadding="10" cellspacing="1" class="kedua">
         <tr>
             <th>Kurir</th>
             <th>Pengirim</th>
@@ -79,7 +83,7 @@
             <td><?php echo $_GET['tujuanbarang'] ?></td>
         </tr>
     </table>
-
+</div>
 
 </body>
 </html>

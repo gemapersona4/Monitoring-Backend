@@ -4,7 +4,7 @@ require 'functions.php';
 // ambil data di URL
 $id = $_GET["id"];
 // query data mahasiswa berdasarkan id
-$str = query("SELECT * FROM santri WHERE id = $id")[0]; 
+$brg = query("SELECT * FROM barangbudi WHERE id = $id")[0]; 
 
 
 // cek apakah tombol submit sudah ditekan atau belum
@@ -34,43 +34,40 @@ if ( isset($_POST["submit"])) {
 <html>
 <head>
     <title>Edit Data Barang</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Edit Data Barang</h1>
-<!-- 
 
-<div style="position:absolute;top:0;bottom:0;left:0;
-right:0;background-color:black;font-size:100px;color:
-red;text-align:center">WEB ANDA TELAH DI HACK</div>
-
- -->
-    <form action="" method="post">
-        <input type="hidden" name="id" value="<?= $str["id"]; ?>">
-        <ul>
-            <li>
+<div class="primary">
+ <h1>Edit Data Barang</h1>
+ <form action="" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?= $brg["id"]; ?>">
+        <input type="hidden" name="gambar" value="<?= $brg["gambar"]; ?>">
+    
+            <p>
                 <label for="warna">Warna : </label>
-                <input type="text" name="warna" id="warna"  value="<?= $str["warna"] ?>">
-            </li>
-            <li>
+                <input type="text" name="warna" id="warna" required value="<?= $brg["warna"] ?>">
+            </p>
+            <p>
                 <label for="nama">Nama : </label>
-                <input type="text" nama="nama" id="nama"  required value="<?= $str["nama"] ?>">
-            </li>
-            <li>
+                <input type="text" name="nama" id="nama"  value="<?= $brg["nama"] ?>">
+            </p>
+            <p>
                 <label for="jumlah">Jumlah : </label>
-                <input type="text" name="jumlah" id="jumlah"  value="<?= $str["jumlah"] ?>">
-            </li>
-            <li>
+                <input type="text" name="jumlah" id="jumlah"  value="<?= $brg["jumlah"] ?>">
+            </p>
+            <p>
                 <label for="merek">Merek : </label>
-                <input type="text" name="merek" id="merek"  value="<?= $str["merek"] ?>">
-            </li>
-            <li>
+                <input type="text" name="merek" id="merek"  value="<?= $brg["merek"] ?>">
+            </p>
+            <p>
                 <label for="gambar">Gambar : </label>
-                <input type="text" name="gambar" id="gambar"  value="<?= $str["gambar"] ?>">
-            </li>
-            <li>
+                <input type="text" name="gambar" id="gambar" value="<?= $brg['gambar']; ?>"><br>
+            </p>
+            <p>
                 <button type="submit" name="submit">Ubah Data!</button>
-            </li>
-        </ul>
+            </p>
+        
     </form>
 </body>
 </html>

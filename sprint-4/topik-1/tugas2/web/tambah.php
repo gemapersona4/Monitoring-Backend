@@ -26,42 +26,39 @@ if ( isset($_POST["submit"])) {
 <html>
 <head>
     <title>Tambah Data Barang</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+<div class="primary">
     <h1>Tambah Data Barang</h1>
-<!-- 
-
-<div style="position:absolute;top:0;bottom:0;left:0;
-right:0;background-color:black;font-size:100px;color:
-red;text-align:center">WEB ANDA TELAH DI HACK</div>
-
- -->
     <form action="" method="post">
-        <ul>
-            <li>
+    
+            <p>
                 <label for="warna">Warna : </label>
                 <input type="text" name="warna" id="warna" required>
-            </li>
-            <li>
+            </p>
+            <p>
                 <label for="nama">Nama : </label>
                 <input type="text" name="nama" id="nama" required>
-            </li>
-            <li>
+            </p>
+            <p>
                 <label for="jumlah">Jumlah : </label>
                 <input type="text" name="jumlah" id="jumlah" required>
-            </li>
-            <li>
-                <label for="Merek">Merek : </label>
-                <input type="text" name="Merek" id="Merek" required>
-            </li>
-            <li>
+            </p>
+            <p>
+                <label for="merek">Merek : </label>
+                <input type="text" name="merek" id="merek" required>
+            </p>
+            <p>
                 <label for="gambar">Gambar : </label>
                 <input type="text" name="gambar" id="gambar" required>
-            </li>
-            <li>
+            </p>
+            <p>
                 <button type="submit" name="submit">Tambah Data!</button>
-            </li>
-        </ul>
+            </p>
+        
     </form>
+</div>
 </body>
 </html>
