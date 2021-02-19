@@ -50,22 +50,22 @@ if( isset($_POST["cari"]) ) {
         <th>Division </th>
     </tr>
 
-    <?php $i=1; ?>
-    <?php foreach( $santri as $row  ) : ?>
-    <tr>
-        <td><?= $i ?></td>
-        <td>
-            <a href="edit.php?id=<?= $row["id"]; ?>">edit</a> ||
-            <a href="delete.php?id=<?= $row["id"] ?>" onclick = "return confirm('yakin');">delete</a>
-        </td>
-        <td><img src="<?= $row["image"] ?>" width="50" height="50" ></td>
-        <td><?= $row["ns"] ?></td>
-        <td><?= $row["name"] ?></td>
-        <td><?= $row["email"] ?></td>
-        <td><?= $row["division"] ?></td>
-    </tr>
-    <?php $i++ ?>
-    <?php endforeach; ?>
+        <?php $i=1; ?>
+        <?php foreach( $santri as $row  ) : ?>
+        <tr>
+            <td><?= $i ?></td>
+            <td>
+                <a href="edit.php?id=<?= $row["id"]; ?>">edit</a> ||
+                <a href="delete.php?id=<?= $row["id"] ?>" onclick = "return confirm('yakin');">delete</a>
+            </td>
+            <td><img src="<?= $row["image"] ?>" width="50" height="50" ></td>
+            <td><?= $row["ns"] ?></td>
+            <td><?= $row["name"] ?></td>
+            <td><?= $row["email"] ?></td>
+            <td><?= $row["division"] ?></td>
+        </tr>
+        <?php $i++ ?>
+        <?php endforeach; ?>
 </table>
 
 </body>
