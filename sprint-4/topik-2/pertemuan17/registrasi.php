@@ -49,7 +49,6 @@ if( isset($_POST["register"]) ) {
         </li>
     </ul>
 
-
 </form>
 
 </body>
