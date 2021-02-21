@@ -8,6 +8,6 @@ $r = trim(fgets(STDIN));
 $luasLingkaran =  pi() * $r * $r ;
 $kelilingLingkaran = 2 * pi() * $r;
 
-echo "luas lingkarannya adalah " . $luasLingkaran . "\n";
-echo "keliling lingkarannya adalah " . $kelilingLingkaran . "\n"; 
+echo "luas lingkarannya adalah " . $luasLingkaran . "cm^2\n";
+echo "keliling lingkarannya adalah " . $kelilingLingkaran . "cm\n"; 
 ?>
