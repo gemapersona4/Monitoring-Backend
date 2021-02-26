@@ -138,7 +138,7 @@ $a = [
 ];
 
 foreach ($a as $A => $B) {
-    echo $A => $B;
+    echo $A . "=>" . $B;
     echo "\n";
 }
 

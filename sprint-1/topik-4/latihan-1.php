@@ -14,12 +14,10 @@ echo "1. Meannya adalah = " . $mean . "\n \n";
 
 // MEDIAN 
 sort($data);
-
-$middle = round(count($data) / 2);;
-$total = $data[$middle - 1];
+$middle = round(count($data) / 2);
+$total = $data[$middle];
 echo "2. Mediannya adalah = " . $total;
 echo "\n \n";
-
 // MODE
 $mode = array_count_values($data);
 echo "3. Modus \n";
@@ -35,7 +33,7 @@ echo "\n------------------------------------------------------------------------
 echo "LATIHAN NOMOR 2 \n\n";
 echo '$data = [5,9,6,7,9,8,10,7,8]' . "\n \n";
 sort($data);
-
+// 5, 6, 7, 7, 8, 8, 9, 9, 10
 for ($i=8; $i > 3; $i--) { 
     if ($data[$i]==$data[$i-1]) {
         continue;
