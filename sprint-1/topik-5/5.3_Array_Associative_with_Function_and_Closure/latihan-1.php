@@ -117,7 +117,7 @@ echo "f) santri paling muda = ";
         return $search[array_key_first($search)];
     }
     print_r(veryYoung($students));
-    echo "\n\n\n\n\n\n\n\n\n\n\n\n";
+    echo "\n\n\n";
 
 $a = [
     [
@@ -138,7 +138,9 @@ $a = [
 ];
 
 foreach ($a as $A => $B) {
-    echo $A . "=>" . $B;
+    foreach ($B as $C => $D) {
+        echo $C . " => " . $D . " ";
+    } 
     echo "\n";
 }
 
