@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    color: cornsilk;
+    font-family: monospace;
+}
+
+.main {
+    background-color: blueviolet;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    margin: 15% auto;
+    border-radius: 20px;
+}
+
+.main-lingkaran {
+    background-color: blueviolet;
+    width: 500px;
+    height: 230px;
+    text-align: center;
+    margin: 15% auto;
+    border-radius: 20px;
+}
+
+.main-segitiga {
+    background-color: blueviolet;
+    width: 500px;
+    height: 230px;
+    text-align: center;
+    margin: 15% auto;
+    border-radius: 20px;    
+}
+
+h1 {
+    border-bottom: 2px solid white;
+    padding: 30px 0 4px 0;
+    margin: 50px auto;
+    width: 200px;
+    text-align: center;
+}
+
+.lingkaran {
+    width: 350px;
+    padding: 30px 0 4px 0;
+    margin: 30px auto;
+}
+
+a {
+    text-decoration: unset;
+    color: cornsilk;
+    background-color: #302b2b ;
+    padding: 10px;
+    box-shadow: 0px 7px #635959;
+    margin: 0 20px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+a:active {
+    box-shadow: none;
+}
