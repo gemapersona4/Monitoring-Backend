@@ -1,0 +1,17 @@
+{
+    "name": "vendor/autoload.php",
+    "description": "Penghitung Luas Sederhana",
+    "type": "library",
+    "authors": [
+        {
+            "name": "gema",
+            "email": "personagema4@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "BangunDatar\\":"autoloader/bangundatar/"
+        }
+    }
+}
