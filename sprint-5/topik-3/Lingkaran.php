@@ -1,5 +1,7 @@
 <?php 
-require 'autoloader/init.php';
+require 'vendor/autoload.php';
+
+// require 'autoloader/bangundatar/Lingkaran.php';
 
 $Lingkaran = new Lingkaran;
 

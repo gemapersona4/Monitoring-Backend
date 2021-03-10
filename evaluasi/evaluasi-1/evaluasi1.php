@@ -35,20 +35,20 @@
 // echo "\n";
 
 // 2. ARRAY
-echo "NOMOR 2\n";
-echo "---------------------------------------------------------------------------------------------------\n";
+// echo "NOMOR 2\n";
+// echo "---------------------------------------------------------------------------------------------------\n";
 
-$integer = "5956560159466056";
-$array = explode("0", $integer);
-rsort($array);
-print_r($array);
-foreach ($array as $a) {
-    echo $a;
-}
-echo "\n";
+// $integer = "5956560159466056";
+// $array = explode("0", $integer);
+// rsort($array);
+// print_r($array);
+// foreach ($array as $a) {
+//     echo $a;
+// }
+// echo "\n";
 
-echo(join(" ", $array));
-echo "\n";
+// echo(join(" ", $array));
+// echo "\n";
 // 3. ASSOCIATIVE ARRAY
 // echo "\n=========\n";
 // echo "|NOMOR 3|\n";
@@ -60,22 +60,22 @@ Gema Masse Cipta
 Programmer
 PHP Backend
 */
-// echo "Jumlah peserta = "; 
-// $peserta =  trim(fgets(STDIN)) . "\n";
-// $s= [
-//     [
-//       'name' => trim(fgets(STDIN)),
-//       'nik'  => trim(fgets(STDIN)),
-//       'jurusan' => trim(fgets(STDIN)),
-//       'divisi' => trim(fgets(STDIN))
-//     ]
-//     ];
+echo "Jumlah peserta = "; 
+$peserta =  trim(fgets(STDIN)) . "\n";
+$s= [
+    [
+      'name' => trim(fgets(STDIN)),
+      'nik'  => trim(fgets(STDIN)),
+      'jurusan' => trim(fgets(STDIN)),
+      'divisi' => trim(fgets(STDIN))
+    ]
+    ];
 
-// $s = [[]]
-// for ($i=1; $i<=$peserta; $i++) {
-//     echo "form ke-$i = ";
-//     $nilai = trim(fgets(STDIN));
-// }
-// print_r($s);
+$s = [[]]
+for ($i=1; $i<=$peserta; $i++) {
+    echo "form ke-$i = ";
+    $nilai = trim(fgets(STDIN));
+}
+print_r($s);
 
 ?>

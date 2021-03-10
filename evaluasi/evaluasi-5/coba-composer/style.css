@@ -1,0 +1,25 @@
+body {
+    background-color:darkblue;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin: 200px auto;
+    border-radius: 30px;
+}
+
+.login {
+    margin: 100px 100px 0px 100px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color:cadetblue;
+    text-align: center;
+    display: inline-block;
+}

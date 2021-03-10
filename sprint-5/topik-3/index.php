@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+use bangundatar\Lingkaran;
+
+?><!DOCTYPE html>
 <html>
 <head>
     <title>Autoloader</title>

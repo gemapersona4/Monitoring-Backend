@@ -7,7 +7,9 @@
 <body>
     <div class="main">
         <h1>Bangun Datar</h1>
-        <a href="Lingkaran.php">LINGKARAN</a>
+        <div class="message">
+        <a href="">LINGKARAN</a>
+        </div>
         <a href="Segitiga.php">SEGITIGA</a>
         <a href="Persegi.php">PERSEGI</a>
     </div>

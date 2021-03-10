@@ -1,5 +1,5 @@
 <?php 
-require 'autoloader/init.php';
+require 'autoloader/bangundatar/Segitiga.php';
 
 $Segitiga = new Segitiga;
  
