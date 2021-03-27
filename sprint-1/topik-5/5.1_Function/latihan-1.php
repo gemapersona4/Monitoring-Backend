@@ -2,7 +2,7 @@
 
 // LATIHAN NOMOR 1
 // MENCARI LUAS PERSEGI PANJANG
-function calcRectangleArea($width,$length) {
+function calcRectangleArea(int $length, $width): int {
     $luas = $width*$length;
     return $luas;
 }
@@ -59,7 +59,6 @@ function calcTrapezoidArea($up,$down,$height) {
 }
 
 echo "4. Menghitung Luas Trapesium\n";
-echo "\n2. Menghitung Luas Trapesium\n";
 echo "Masukkan nilai atas = ";
 $up = trim(fgets(STDIN));
 echo "Masukkan nilai bawah = ";

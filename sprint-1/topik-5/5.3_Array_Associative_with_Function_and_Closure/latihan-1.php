@@ -118,30 +118,3 @@ echo "f) santri paling muda = ";
     }
     print_r(veryYoung($students));
     echo "\n\n\n";
-
-$a = [
-    [
-        'name' => '1a',
-        'id' => '12b',
-        'div' => '123c',
-    ],
-    [
-        'name' => '2b',
-        'id' => '23c',
-        'div' => '234d',
-    ],
-    [
-        'name' => '3c',
-        'id' => '34d',
-        'div' => '345e',
-    ]
-];
-
-foreach ($a as $A => $B) {
-    foreach ($B as $C => $D) {
-        echo $C . " => " . $D . " ";
-    } 
-    echo "\n";
-}
-
-?>

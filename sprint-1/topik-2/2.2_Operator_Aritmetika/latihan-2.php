@@ -10,4 +10,3 @@ $kelilingLingkaran = 2 * pi() * $r;
 
 echo "luas lingkarannya adalah " . $luasLingkaran . "cm^2\n";
 echo "keliling lingkarannya adalah " . $kelilingLingkaran . "cm\n"; 
-?>

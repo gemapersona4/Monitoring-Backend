@@ -44,19 +44,19 @@ ______________________________________________
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  5. var_dump((bool)$g);
-   Perintah ini menghasilkan nilai false karena nilai dari null sama dengan nol.
+   Perintah ini menghasilkan nilai false karena nilai null dikonversi ke boolean menjadi false`.
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  6. var_dump((int)$g);
-   Nilai dari null bila dikonversi ke tipe data integer adalah 0, inilah gunanya perintah di atas ini.
+   Nilai dari null bila dikonversi ke tipe data integer adalah 0.
    
 ////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  7. var_dump(true && false);
-   Perintah ini akan menghasilkan nilai false. Operasi logika "&&" akan mengeluarkan nilai true hanya bila kedua 
+   Perintah ini akan menghasilkan nilai false. Operasi logika "&&" akan mengeluarkan nilai true hanya bila KEDUA 
    operand bernilai "true". Hasil perintah di atas adalah false karena salah satu saja yang bernilai true.
    
 ////////////////////////////////

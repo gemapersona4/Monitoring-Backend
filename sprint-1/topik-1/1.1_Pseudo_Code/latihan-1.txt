@@ -12,7 +12,7 @@ SET semuaKomponen_tersambungListrik = true
 JIKA semuaKomponen_tersambungListrik == true
     Tampilkan pesan loading for windows 10
     SET desktop = true
-AKHIR-JIKA
+AKHIRI-JIKA
 
 JIKA desktop == true
     Tampilkan pesan anda sudah di Desktop Windows 10 dan harus klik ikon jendela windows 10 di sebelah kiri-bawah

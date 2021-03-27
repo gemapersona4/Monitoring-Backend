@@ -15,4 +15,3 @@ echo "3. Suhu sekarang " .  $suhuKelvin . " Kelvin \n";
 echo "4. Suhu sekarang " .  $suhuReamur . " Reamur \n\n"; 
 
 
-?>
